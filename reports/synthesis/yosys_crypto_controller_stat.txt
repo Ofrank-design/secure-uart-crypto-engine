@@ -1,0 +1,93 @@
+
+6. Printing statistics.
+
+=== crypto_controller ===
+
+   Number of wires:               1300
+   Number of wire bits:          36740
+   Number of public wires:        1104
+   Number of public wire bits:   36544
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                766
+     $add                            7
+     $and                           90
+     $dffe                          43
+     $eq                            38
+     $le                             1
+     $logic_not                      5
+     $lt                             2
+     $mux                          259
+     $ne                           102
+     $not                           27
+     $or                             3
+     $pmux                         108
+     $reduce_and                    47
+     $reduce_or                     12
+     $sdff                           5
+     $sdffe                         11
+     $sub                            5
+     packet_builder_256              1
+
+=== packet_builder_256 ===
+
+   Number of wires:                304
+   Number of wire bits:           2985
+   Number of public wires:         250
+   Number of public wire bits:    2931
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                191
+     $add                            5
+     $and                            3
+     $dffe                          12
+     $eq                            32
+     $ge                             1
+     $gt                             1
+     $le                             1
+     $logic_not                      5
+     $mux                           72
+     $ne                            19
+     $not                            3
+     $pmux                          21
+     $reduce_and                     7
+     $reduce_or                      3
+     $sdff                           1
+     $sdffe                          3
+     $sub                            2
+
+=== design hierarchy ===
+
+   crypto_controller                 1
+     packet_builder_256              1
+
+   Number of wires:               1604
+   Number of wire bits:          39725
+   Number of public wires:        1354
+   Number of public wire bits:   39475
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                956
+     $add                           12
+     $and                           93
+     $dffe                          55
+     $eq                            70
+     $ge                             1
+     $gt                             1
+     $le                             2
+     $logic_not                     10
+     $lt                             2
+     $mux                          331
+     $ne                           121
+     $not                           30
+     $or                             3
+     $pmux                         129
+     $reduce_and                    54
+     $reduce_or                     15
+     $sdff                           6
+     $sdffe                         14
+     $sub                            7
+

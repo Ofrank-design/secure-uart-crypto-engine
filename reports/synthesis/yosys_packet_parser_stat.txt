@@ -1,0 +1,32 @@
+
+6. Printing statistics.
+
+=== packet_parser ===
+
+   Number of wires:               2226
+   Number of wire bits:          23760
+   Number of public wires:        1653
+   Number of public wire bits:   23187
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1801
+     $add                            2
+     $and                          514
+     $dffe                         261
+     $eq                            35
+     $ge                             1
+     $gt                             2
+     $le                             1
+     $logic_not                      6
+     $mux                          317
+     $ne                           278
+     $not                           11
+     $or                             3
+     $pmux                          93
+     $reduce_and                   263
+     $reduce_or                      6
+     $sdff                           4
+     $sdffe                          2
+     $sub                            2
+

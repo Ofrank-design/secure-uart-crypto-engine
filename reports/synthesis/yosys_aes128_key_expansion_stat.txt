@@ -1,0 +1,18 @@
+
+6. Printing statistics.
+
+=== aes128_key_expansion ===
+
+   Number of wires:                 33
+   Number of wire bits:           1048
+   Number of public wires:          33
+   Number of public wire bits:    1048
+   Number of memories:               4
+   Number of memory bits:         8192
+   Number of processes:              0
+   Number of cells:               1037
+     $meminit_v2                  1024
+     $memrd                          4
+     $sub                            4
+     $xor                            5
+

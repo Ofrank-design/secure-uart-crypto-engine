@@ -1,0 +1,52 @@
+Secure UART Crypto Engine - regression manifest
+date (UTC): 2026-10-21T23:10:59Z
+ghdl: GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]
+yosys: Yosys 0.33 (git sha1 2584903a060)
+python cryptography: 46.0.6
+tree hash (sha256 of sorted per-file hashes of rtl/ tb/ tests/ scripts/ constraints/):
+604778fc21caa80f6f5a2ffd5f1630bef33c7c55502f321afc75121e1b1a98bf
+--- files
+08a5381036e7cba729bccd6eadd658b6d8849d62aabca1951bdbe2a956154583  constraints/timing_constraints.xdc
+36cc85e86dc38e8bcb1da95cca9df5d7a252b5ff3c023da65f30e38c7ed5a97f  rtl/aes128_core.vhd
+7c50c44b9ac8a05f159bb672c9b1f9c9ee3d9bc0bdad04dd4dbbf900caca87b9  rtl/aes_gcm_engine.vhd
+2dd14d00cb8f00d683a2cbdfb043e7db286ad09b1a2f45751130f5af6fd5aedd  rtl/aes_pkg.vhd
+d39908974c3b624f7a84cdceffa31b7bebbbde2599e2a7ff93731d35582a0e3b  rtl/crypto_controller.vhd
+dd0af4de63448050a68554c3790cbe98a9829ea9b12828993491eac3f81363d3  rtl/ghash_mult.vhd
+824827e175bcbe597453fedf4f7fd82bed22ca4c43fdca660e4cec7d5d77a2a0  rtl/key_manager.vhd
+f7e035adb5b2527edb6cc022f967f0c299304e6a62c4b21a8148d69ae579d5dd  rtl/packet_parser.vhd
+0223e1547773b9ed404199a1ce1cceb15bcd4ce5df14805c210bd71e12d81e27  rtl/secure_uart_crypto_top.vhd
+201116581d099d0ac566a97702b96d504ae7af023f5166f04d865d6d8b7d51ce  rtl/sync_fifo.vhd
+544bc59cbea88ecc474440e10f27aa139d374ab30f918876323765983fd9b330  rtl/uart_rx.vhd
+dbc7437b9e5c28664045c7d2827b36f1dead6ff9292aac403920177ce6aaba2a  rtl/uart_timing.vhd
+8e80d61262626dc1d05200daf70415554141bc1db31fb470fbe27cfcee644c67  rtl/uart_tx.vhd
+70277a512e521c1253e287a9e631d56dea33ca22e05cfe862575c003e129a7b1  scripts/gen_e2e_vectors.py
+84a83cf26a07360ba921c03b74e99fd6953944886c60144ddfe814cd28fbce25  scripts/gen_gcm_vectors.py
+24309a5a3b62422c2a752f699a55bf07da4e3bb6b130d4bf27bed51bf9fbac80  scripts/host_tool.py
+5bde7d2d9dc77ad2728de073b9707246efcacd6c7265ea4b59ba49800ab3fd52  scripts/make_manifest.sh
+b416930448af5347c6cfc6771172de381487f5788021833a28eccd5a0d3588b4  scripts/run_simulation.sh
+abfec0a65644e3572db6026fa775fc69664d321d2d10974aa752e5983b9c36fb  scripts/run_synth_check.sh
+808befdfeb097c793f741dcf258297f3d0ff1e969cd79a76eb2755febf962f19  tb/aes128_core_tb.vhd
+64747b33dc2b5fca64c8f639f20c09768e74698ceb976c23d6024e8097182cdb  tb/aes_gcm_tb.vhd
+ad5902361f972c0bfd1b6f6a69ab0ed51195b62cdb68122999b7b40ec27facd4  tb/packet_parser_tb.vhd
+f41057ab8abe8f4158236c9d255d208a71e5f5e907049c2b2f5c62dfb84ec51c  tb/secure_uart_crypto_top_tb.vhd
+14626d2adbdca572a775868c76f9efabe6cac14ebbd2467c2b9e0b493cf9103f  tb/secure_uart_hardening_tb.vhd
+da383d2e7bae1577bbcf7a2c41de39ef98d81c1dbdd25a9a7dc4d1d3d459ad73  tb/sync_fifo_tb.vhd
+8c4e48a29abf02f5f11db38837f67059d655f6a8942c70d017ab8e494a4855f7  tb/uart_rx_tb.vhd
+4ad112ebc15064bd091dce433a6553990f59c2d3a42ea5a954c6f5e5ebf16d9a  tb/uart_timing_tb.vhd
+308cb6c127e8fb30965dbe846df995c1e66cd094fd7fb8af5c2fd8857730058e  tb/uart_tx_tb.vhd
+53881da5deee6482be1e7337f34e0ea0cf826e73d261e218f9c84ccded349b50  tests/protocol_cases/e2e_cases.txt
+e822108aa1e519e892bdd4665e0d6a8bbd6e214b6efdb271c7b9ef000296e006  tests/reference_vectors/gcm_vectors.txt
+--- regression result lines (reports/verification/regression_log.txt)
+tb/uart_timing_tb.vhd:48:9:@50000140ns:(report note): uart_timing_tb: PASS  16x=7680 1x=480
+tb/uart_rx_tb.vhd:121:9:@303438678ns:(report note): T3 PASS: framing error and recovery
+tb/uart_rx_tb.vhd:158:9:@329970092900ps:(report note): uart_rx_tb: ALL TESTS PASSED
+tb/uart_tx_tb.vhd:133:9:@296354535ns:(report note): uart_tx_tb: ALL TESTS PASSED
+tb/sync_fifo_tb.vhd:115:9:@400630ns:(report note): sync_fifo_tb: ALL TESTS PASSED
+tb/packet_parser_tb.vhd:214:9:@276370ns:(report note): packet_parser_tb: ALL TESTS PASSED
+tb/aes128_core_tb.vhd:46:9:@1030ns:(report note): aes128_core_tb: ALL TESTS PASSED
+tb/aes_gcm_tb.vhd:210:9:@8511430ns:(report note): aes_gcm_tb: ALL TESTS PASSED
+tb/secure_uart_hardening_tb.vhd:204:9:@36066505554850fs:(report note): secure_uart_hardening_tb: ALL TESTS PASSED
+ALL TESTBENCHES PASSED
+tb/secure_uart_crypto_top_tb.vhd:268:9:@309447577499972fs:(report note): secure_uart_crypto_top_tb: ALL TESTS PASSED
+ALL TESTBENCHES PASSED
+tb/secure_uart_crypto_top_tb.vhd:268:9:@3677184679999967fs:(report note): secure_uart_crypto_top_tb: ALL TESTS PASSED

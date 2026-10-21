@@ -1,0 +1,27 @@
+
+6. Printing statistics.
+
+=== sync_fifo ===
+
+   Number of wires:                 60
+   Number of wire bits:            524
+   Number of public wires:          56
+   Number of public wire bits:     498
+   Number of memories:               1
+   Number of memory bits:         4096
+   Number of processes:              0
+   Number of cells:                547
+     $add                            3
+     $and                            7
+     $eq                             1
+     $logic_not                      1
+     $meminit_v2                   512
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            9
+     $not                            5
+     $reduce_bool                    1
+     $sdff                           2
+     $sdffe                          3
+     $sub                            1
+

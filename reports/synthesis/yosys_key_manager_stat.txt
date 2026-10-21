@@ -1,0 +1,18 @@
+
+6. Printing statistics.
+
+=== key_manager ===
+
+   Number of wires:                 17
+   Number of wire bits:            779
+   Number of public wires:          15
+   Number of public wire bits:     777
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $mux                            4
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+

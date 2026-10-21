@@ -1,0 +1,12 @@
+rtl/aes_pkg.vhd:58:20:note: found ROM "n33", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n45", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n58", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n71", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^

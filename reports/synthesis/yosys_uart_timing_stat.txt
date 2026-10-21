@@ -1,0 +1,19 @@
+
+6. Printing statistics.
+
+=== uart_timing ===
+
+   Number of wires:                 18
+   Number of wire bits:            360
+   Number of public wires:          18
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $ge                             1
+     $mux                            2
+     $sdff                           2
+     $sub                            1
+

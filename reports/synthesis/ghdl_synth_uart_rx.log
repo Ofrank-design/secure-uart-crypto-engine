@@ -1,0 +1,3 @@
+rtl/uart_rx.vhd:31:15:warning: unhandled attribute "async_reg" [-Wunhandled-attribute]
+    attribute async_reg of sync : signal is "true";
+              ^

@@ -1,0 +1,108 @@
+rtl/aes_pkg.vhd:58:20:note: found ROM "n44", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n58", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n71", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n84", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n97", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n110", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n123", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n136", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n149", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n162", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n175", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n188", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n201", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n214", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n227", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n240", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n643", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n657", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n670", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n683", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n696", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n709", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n722", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n735", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n748", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n761", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n774", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n787", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n800", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n813", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n826", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:58:20:note: found ROM "n839", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                   ^
+rtl/aes_pkg.vhd:56:14:note: found ROM "n1047", width: 8 bits, depth: 256
+    function sbox_f (b : byte_t) return byte_t is
+             ^
+rtl/aes_pkg.vhd:58:21:note: found ROM "n1059", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                    ^
+rtl/aes_pkg.vhd:58:21:note: found ROM "n1072", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                    ^
+rtl/aes_pkg.vhd:58:21:note: found ROM "n1085", width: 8 bits, depth: 256
+        return SBOX(to_integer(unsigned(b)));
+                    ^

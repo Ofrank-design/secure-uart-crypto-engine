@@ -1,0 +1,382 @@
+
+6. Printing statistics.
+
+=== aes128_core ===
+
+   Number of wires:                354
+   Number of wire bits:           5621
+   Number of public wires:         347
+   Number of public wire bits:    5614
+   Number of memories:              32
+   Number of memory bits:        65536
+   Number of processes:              0
+   Number of cells:               8376
+     $add                            1
+     $dffe                           4
+     $eq                             1
+     $lt                             1
+     $meminit_v2                  8192
+     $memrd                         32
+     $mux                           34
+     $not                           19
+     $reduce_and                     2
+     $reduce_bool                    2
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          1
+     $sub                           16
+     $xor                           67
+     aes128_key_expansion            1
+
+=== aes128_key_expansion ===
+
+   Number of wires:                 33
+   Number of wire bits:           1048
+   Number of public wires:          33
+   Number of public wire bits:    1048
+   Number of memories:               4
+   Number of memory bits:         8192
+   Number of processes:              0
+   Number of cells:               1037
+     $meminit_v2                  1024
+     $memrd                          4
+     $sub                            4
+     $xor                            5
+
+=== aes_gcm_engine ===
+
+   Number of wires:                621
+   Number of wire bits:          16386
+   Number of public wires:         544
+   Number of public wire bits:   16309
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                324
+     $add                            5
+     $and                            1
+     $dff                            1
+     $dffe                          17
+     $eq                            27
+     $gt                             4
+     $logic_not                      2
+     $lt                            34
+     $mux                          140
+     $ne                            32
+     $not                            5
+     $or                             3
+     $pmux                          14
+     $reduce_and                    14
+     $reduce_bool                    1
+     $reduce_or                     12
+     $sdff                           2
+     $sdffe                          3
+     $sub                            2
+     $xor                            3
+     aes128_core                     1
+     ghash_mult                      1
+
+=== crypto_controller_256_50000000_90d1d6112871a7dc6d0fa5200d9bb9c67707afcf ===
+
+   Number of wires:               1300
+   Number of wire bits:          36740
+   Number of public wires:        1104
+   Number of public wire bits:   36544
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                766
+     $add                            7
+     $and                           90
+     $dffe                          43
+     $eq                            38
+     $le                             1
+     $logic_not                      5
+     $lt                             2
+     $mux                          259
+     $ne                           102
+     $not                           27
+     $or                             3
+     $pmux                         108
+     $reduce_and                    47
+     $reduce_or                     12
+     $sdff                           5
+     $sdffe                         11
+     $sub                            5
+     packet_builder_256              1
+
+=== ghash_mult ===
+
+   Number of wires:                 64
+   Number of wire bits:           3640
+   Number of public wires:          55
+   Number of public wire bits:    3631
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $add                            1
+     $dffe                           4
+     $eq                             1
+     $mux                           18
+     $ne                             1
+     $not                            3
+     $reduce_and                     3
+     $reduce_bool                    2
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          1
+     $xor                            1
+
+=== key_manager_f436a9dd8d2add9d51afd312f774a743675e05e9 ===
+
+   Number of wires:                 17
+   Number of wire bits:            779
+   Number of public wires:          15
+   Number of public wire bits:     777
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $mux                            4
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+
+=== packet_builder_256 ===
+
+   Number of wires:                304
+   Number of wire bits:           2985
+   Number of public wires:         250
+   Number of public wire bits:    2931
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                191
+     $add                            5
+     $and                            3
+     $dffe                          12
+     $eq                            32
+     $ge                             1
+     $gt                             1
+     $le                             1
+     $logic_not                      5
+     $mux                           72
+     $ne                            19
+     $not                            3
+     $pmux                          21
+     $reduce_and                     7
+     $reduce_or                      3
+     $sdff                           1
+     $sdffe                          3
+     $sub                            2
+
+=== packet_parser_256_5000000 ===
+
+   Number of wires:               2226
+   Number of wire bits:          23760
+   Number of public wires:        1653
+   Number of public wire bits:   23187
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1801
+     $add                            2
+     $and                          514
+     $dffe                         261
+     $eq                            35
+     $ge                             1
+     $gt                             2
+     $le                             1
+     $logic_not                      6
+     $mux                          317
+     $ne                           278
+     $not                           11
+     $or                             3
+     $pmux                          93
+     $reduce_and                   263
+     $reduce_or                      6
+     $sdff                           4
+     $sdffe                          2
+     $sub                            2
+
+=== secure_uart_crypto_top ===
+
+   Number of wires:                133
+   Number of wire bits:           2896
+   Number of public wires:         133
+   Number of public wire bits:    2896
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $and                            1
+     $dff                            1
+     $gt                             1
+     $mux                            1
+     $not                            2
+     aes_gcm_engine                  1
+     crypto_controller_256_50000000_90d1d6112871a7dc6d0fa5200d9bb9c67707afcf      1
+     key_manager_f436a9dd8d2add9d51afd312f774a743675e05e9      1
+     packet_parser_256_5000000       1
+     sync_fifo_8_512                 2
+     uart_rx_50000000_9600           1
+     uart_tx_50000000_9600           1
+
+=== sync_fifo_8_512 ===
+
+   Number of wires:                 60
+   Number of wire bits:            524
+   Number of public wires:          56
+   Number of public wire bits:     498
+   Number of memories:               1
+   Number of memory bits:         4096
+   Number of processes:              0
+   Number of cells:                547
+     $add                            3
+     $and                            7
+     $eq                             1
+     $logic_not                      1
+     $meminit_v2                   512
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            9
+     $not                            5
+     $reduce_bool                    1
+     $sdff                           2
+     $sdffe                          3
+     $sub                            1
+
+=== uart_rx_50000000_9600 ===
+
+   Number of wires:                122
+   Number of wire bits:            281
+   Number of public wires:          90
+   Number of public wire bits:     249
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 94
+     $add                            2
+     $and                            8
+     $dffe                           1
+     $eq                            12
+     $logic_not                      1
+     $mux                           29
+     $ne                            15
+     $not                            5
+     $pmux                           5
+     $reduce_and                     5
+     $reduce_or                      3
+     $sdff                           3
+     $sdffe                          4
+     uart_timing_50000000_9600_16      1
+
+=== uart_timing_50000000_9600_1 ===
+
+   Number of wires:                 18
+   Number of wire bits:            360
+   Number of public wires:          18
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $ge                             1
+     $mux                            2
+     $sdff                           2
+     $sub                            1
+
+=== uart_timing_50000000_9600_16 ===
+
+   Number of wires:                 18
+   Number of wire bits:            360
+   Number of public wires:          18
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $ge                             1
+     $mux                            2
+     $sdff                           2
+     $sub                            1
+
+=== uart_tx_50000000_9600 ===
+
+   Number of wires:                 79
+   Number of wire bits:            175
+   Number of public wires:          54
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 60
+     $add                            1
+     $and                            1
+     $dffe                           1
+     $eq                            10
+     $logic_not                      1
+     $mux                           16
+     $ne                            10
+     $not                            3
+     $pmux                           5
+     $reduce_and                     4
+     $reduce_or                      3
+     $sdff                           1
+     $sdffe                          3
+     uart_timing_50000000_9600_1      1
+
+=== design hierarchy ===
+
+   secure_uart_crypto_top            1
+     aes_gcm_engine                  1
+       aes128_core                   1
+         aes128_key_expansion        1
+       ghash_mult                    1
+     crypto_controller_256_50000000_90d1d6112871a7dc6d0fa5200d9bb9c67707afcf      1
+       packet_builder_256            1
+     key_manager_f436a9dd8d2add9d51afd312f774a743675e05e9      1
+     packet_parser_256_5000000       1
+     sync_fifo_8_512                 2
+     uart_rx_50000000_9600           1
+       uart_timing_50000000_9600_16      1
+     uart_tx_50000000_9600           1
+       uart_timing_50000000_9600_1      1
+
+   Number of wires:               5409
+   Number of wire bits:          96079
+   Number of public wires:        4426
+   Number of public wire bits:   95052
+   Number of memories:              38
+   Number of memory bits:        81920
+   Number of processes:              0
+   Number of cells:              13804
+     $add                           32
+     $and                          632
+     $dff                            2
+     $dffe                         343
+     $eq                           158
+     $ge                             4
+     $gt                             8
+     $le                             3
+     $logic_not                     22
+     $lt                            37
+     $meminit_v2                 10240
+     $memrd                         38
+     $memwr_v2                       2
+     $mux                          912
+     $ne                           457
+     $not                           88
+     $or                             9
+     $pmux                         246
+     $reduce_and                   345
+     $reduce_bool                    8
+     $reduce_or                     42
+     $sdff                          28
+     $sdffe                         37
+     $sub                           35
+     $xor                           76
+

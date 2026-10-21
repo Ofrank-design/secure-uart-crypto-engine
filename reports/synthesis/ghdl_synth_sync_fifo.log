@@ -1,0 +1,3 @@
+rtl/sync_fifo.vhd:33:12:note: found RAM "mem", width: 8 bits, depth: 512
+    signal mem    : mem_t := (others => (others => '0'));
+           ^

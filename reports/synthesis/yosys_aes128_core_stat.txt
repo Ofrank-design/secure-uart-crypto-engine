@@ -1,0 +1,74 @@
+
+6. Printing statistics.
+
+=== aes128_core ===
+
+   Number of wires:                354
+   Number of wire bits:           5621
+   Number of public wires:         347
+   Number of public wire bits:    5614
+   Number of memories:              32
+   Number of memory bits:        65536
+   Number of processes:              0
+   Number of cells:               8376
+     $add                            1
+     $dffe                           4
+     $eq                             1
+     $lt                             1
+     $meminit_v2                  8192
+     $memrd                         32
+     $mux                           34
+     $not                           19
+     $reduce_and                     2
+     $reduce_bool                    2
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          1
+     $sub                           16
+     $xor                           67
+     aes128_key_expansion            1
+
+=== aes128_key_expansion ===
+
+   Number of wires:                 33
+   Number of wire bits:           1048
+   Number of public wires:          33
+   Number of public wire bits:    1048
+   Number of memories:               4
+   Number of memory bits:         8192
+   Number of processes:              0
+   Number of cells:               1037
+     $meminit_v2                  1024
+     $memrd                          4
+     $sub                            4
+     $xor                            5
+
+=== design hierarchy ===
+
+   aes128_core                       1
+     aes128_key_expansion            1
+
+   Number of wires:                387
+   Number of wire bits:           6669
+   Number of public wires:         380
+   Number of public wire bits:    6662
+   Number of memories:              36
+   Number of memory bits:        73728
+   Number of processes:              0
+   Number of cells:               9412
+     $add                            1
+     $dffe                           4
+     $eq                             1
+     $lt                             1
+     $meminit_v2                  9216
+     $memrd                         36
+     $mux                           34
+     $not                           19
+     $reduce_and                     2
+     $reduce_bool                    2
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          1
+     $sub                           20
+     $xor                           72
+

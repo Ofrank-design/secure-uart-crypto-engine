@@ -1,0 +1,73 @@
+
+6. Printing statistics.
+
+=== uart_rx ===
+
+   Number of wires:                122
+   Number of wire bits:            281
+   Number of public wires:          90
+   Number of public wire bits:     249
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 94
+     $add                            2
+     $and                            8
+     $dffe                           1
+     $eq                            12
+     $logic_not                      1
+     $mux                           29
+     $ne                            15
+     $not                            5
+     $pmux                           5
+     $reduce_and                     5
+     $reduce_or                      3
+     $sdff                           3
+     $sdffe                          4
+     uart_timing_50000000_9600_16      1
+
+=== uart_timing_50000000_9600_16 ===
+
+   Number of wires:                 18
+   Number of wire bits:            360
+   Number of public wires:          18
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $ge                             1
+     $mux                            2
+     $sdff                           2
+     $sub                            1
+
+=== design hierarchy ===
+
+   uart_rx                           1
+     uart_timing_50000000_9600_16      1
+
+   Number of wires:                140
+   Number of wire bits:            641
+   Number of public wires:         108
+   Number of public wire bits:     609
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                100
+     $add                            3
+     $and                            8
+     $dffe                           1
+     $eq                            12
+     $ge                             1
+     $logic_not                      1
+     $mux                           31
+     $ne                            15
+     $not                            5
+     $pmux                           5
+     $reduce_and                     5
+     $reduce_or                      3
+     $sdff                           5
+     $sdffe                          4
+     $sub                            1
+

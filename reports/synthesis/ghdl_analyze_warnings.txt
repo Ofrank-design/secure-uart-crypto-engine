@@ -1,0 +1,6 @@
+rtl/packet_parser.vhd:139:33:warning: redundant 'others' choices [-Wothers]
+                                when others =>  -- 17: low length byte, header complete
+                                ^
+rtl/packet_parser.vhd:139:33:warning: 'others' choice allowed only if the index constraint is static [-Wstatic]
+                                when others =>  -- 17: low length byte, header complete
+                                ^
