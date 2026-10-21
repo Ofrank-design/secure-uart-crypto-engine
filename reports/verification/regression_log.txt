@@ -1,3 +1,24 @@
+== regenerate reference vectors (must reproduce identically)
+108 vectors written; published vectors 1-4 confirmed
+40 lines written {'auth': 4, 'replay': 3, 'parse': 4}
+vectors reproducible
+== lint + synthesis check
+analysis: clean (only the accepted packet_parser 'others' notes)
+synth ok (no latches / driver conflicts): uart_timing
+synth ok (no latches / driver conflicts): uart_rx
+synth ok (no latches / driver conflicts): uart_tx
+synth ok (no latches / driver conflicts): sync_fifo
+synth ok (no latches / driver conflicts): packet_parser
+synth ok (no latches / driver conflicts): aes128_key_expansion
+synth ok (no latches / driver conflicts): aes128_core
+synth ok (no latches / driver conflicts): ghash_mult
+synth ok (no latches / driver conflicts): aes_gcm_engine
+synth ok (no latches / driver conflicts): key_manager
+synth ok (no latches / driver conflicts): packet_builder
+synth ok (no latches / driver conflicts): crypto_controller
+synth ok (no latches / driver conflicts): secure_uart_crypto_top
+LINT PASSED
+== simulation
 === uart_timing_tb ===
 tb/uart_timing_tb.vhd:48:9:@50000140ns:(report note): uart_timing_tb: PASS  16x=7680 1x=480
 simulation finished @50000140ns
@@ -8,8 +29,10 @@ tb/uart_rx_tb.vhd:121:9:@303438678ns:(report note): T3 PASS: framing error and r
 tb/uart_rx_tb.vhd:132:9:@305022016400ps:(report note): T4 PASS: start-bit glitch rejected
 tb/uart_rx_tb.vhd:147:9:@307886688900ps:(report note): T5 PASS: reset during reception
 tb/uart_rx_tb.vhd:156:9:@329970092900ps:(report note): T6 PASS: long idle
-tb/uart_rx_tb.vhd:158:9:@329970092900ps:(report note): uart_rx_tb: ALL TESTS PASSED
-simulation finished @329970092900ps
+tb/uart_rx_tb.vhd:169:9:@332834685400ps:(report note): T7 PASS: break condition and recovery
+tb/uart_rx_tb.vhd:183:9:@341793110400ps:(report note): T8 PASS: asynchronous phase offsets
+tb/uart_rx_tb.vhd:185:9:@341793110400ps:(report note): uart_rx_tb: ALL TESTS PASSED
+simulation finished @341793110400ps
 === uart_tx_tb ===
 tb/uart_tx_tb.vhd:104:9:@1250257ns:(report note): T1 PASS: single byte, handshake, done
 tb/uart_tx_tb.vhd:118:9:@294791884ns:(report note): T2 PASS: 256 back-to-back frames, spacing checked
@@ -33,6 +56,12 @@ tb/packet_parser_tb.vhd:202:9:@275370ns:(report note): T7 PASS: backpressure whi
 tb/packet_parser_tb.vhd:212:9:@276370ns:(report note): T8 PASS: reset mid-packet
 tb/packet_parser_tb.vhd:214:9:@276370ns:(report note): packet_parser_tb: ALL TESTS PASSED
 simulation finished @276370ns
+=== aes128_key_expansion_tb ===
+tb/aes128_key_expansion_tb.vhd:47:9:@10ns:(report note): FIPS-197 A.1: all 10 derived round keys PASS
+tb/aes128_key_expansion_tb.vhd:38:13:@20ns:(report note): all-zero key PASS
+tb/aes128_key_expansion_tb.vhd:38:13:@30ns:(report note): key 00..0f PASS
+tb/aes128_key_expansion_tb.vhd:50:9:@30ns:(report note): aes128_key_expansion_tb: ALL TESTS PASSED
+simulation finished @30ns
 === aes128_core_tb ===
 tb/aes128_core_tb.vhd:34:13:@310ns:(report note): FIPS-197 C.1 PASS
 tb/aes128_core_tb.vhd:34:13:@550ns:(report note): FIPS-197 App.B PASS
@@ -40,24 +69,47 @@ tb/aes128_core_tb.vhd:34:13:@790ns:(report note): zero key/pt PASS
 tb/aes128_core_tb.vhd:34:13:@1030ns:(report note): reuse after other key PASS
 tb/aes128_core_tb.vhd:46:9:@1030ns:(report note): aes128_core_tb: ALL TESTS PASSED
 simulation finished @1030ns
+=== packet_builder_tb ===
+tb/packet_builder_tb.vhd:120:13:@630ns:(report note): error frame PASS (20 bytes)
+tb/packet_builder_tb.vhd:120:13:@1190ns:(report note): data, no tag PASS (24 bytes)
+tb/packet_builder_tb.vhd:120:13:@1650ns:(report note): empty, no tag PASS (19 bytes)
+tb/packet_builder_tb.vhd:120:13:@2430ns:(report note): tag only PASS (35 bytes)
+tb/packet_builder_tb.vhd:120:13:@3870ns:(report note): 33 bytes + tag PASS (68 bytes)
+tb/packet_builder_tb.vhd:120:13:@4970ns:(report note): exactly one block + tag PASS (51 bytes)
+tb/packet_builder_tb.vhd:120:13:@5770ns:(report note): block boundary +1 PASS (36 bytes)
+tb/packet_builder_tb.vhd:120:13:@11670ns:(report note): maximum payload + tag PASS (291 bytes)
+tb/packet_builder_tb.vhd:125:46:@11670ns:(report note): --- with random FIFO backpressure
+tb/packet_builder_tb.vhd:120:13:@12310ns:(report note): error frame PASS (20 bytes)
+tb/packet_builder_tb.vhd:120:13:@13450ns:(report note): data, no tag PASS (24 bytes)
+tb/packet_builder_tb.vhd:120:13:@14230ns:(report note): empty, no tag PASS (19 bytes)
+tb/packet_builder_tb.vhd:120:13:@15290ns:(report note): tag only PASS (35 bytes)
+tb/packet_builder_tb.vhd:120:13:@17970ns:(report note): 33 bytes + tag PASS (68 bytes)
+tb/packet_builder_tb.vhd:120:13:@19670ns:(report note): exactly one block + tag PASS (51 bytes)
+tb/packet_builder_tb.vhd:120:13:@20850ns:(report note): block boundary +1 PASS (36 bytes)
+tb/packet_builder_tb.vhd:120:13:@31270ns:(report note): maximum payload + tag PASS (291 bytes)
+tb/packet_builder_tb.vhd:135:9:@31270ns:(report note): packet_builder_tb: ALL TESTS PASSED
+simulation finished @31270ns
 === aes_gcm_tb ===
-tb/aes_gcm_tb.vhd:209:9:@8511430ns:(report note): aes_gcm_tb: 108 vectors x (enc, dec, tamper) PASSED
-tb/aes_gcm_tb.vhd:210:9:@8511430ns:(report note): aes_gcm_tb: ALL TESTS PASSED
-simulation finished @8511430ns
-simulation finished @309452397499972fs
-=== secure_uart_hardening_tb ===
-tb/secure_uart_hardening_tb.vhd:167:9:@7247061110650fs:(report note): A1 PASS: RX FIFO overflow flagged (44 dropped bytes)
-tb/secure_uart_hardening_tb.vhd:181:9:@17247061110650fs:(report note): A2 PASS: 39-byte response through 16-byte TX FIFO, junk ignored
-tb/secure_uart_hardening_tb.vhd:191:9:@29243588888300fs:(report note): A3 PASS: recovery after flood, nonce counter +1
-tb/secure_uart_hardening_tb.vhd:202:9:@36066505554850fs:(report note): B PASS: ENCRYPT_REQ refused (code 06), NV store untouched
-tb/secure_uart_hardening_tb.vhd:204:9:@36066505554850fs:(report note): secure_uart_hardening_tb: ALL TESTS PASSED
-simulation finished @36066505554850fs
-ALL TESTBENCHES PASSED
---- secure_uart_crypto_top_tb (re-run after the baud-independent reset trigger fix)
+tb/aes_gcm_tb.vhd:228:9:@8517690ns:(report note): start-while-busy: error pulse, transaction intact PASS
+tb/aes_gcm_tb.vhd:230:9:@8517690ns:(report note): aes_gcm_tb: 108 vectors x (enc, dec, tamper) PASSED
+tb/aes_gcm_tb.vhd:231:9:@8517690ns:(report note): aes_gcm_tb: ALL TESTS PASSED
+simulation finished @8517690ns
+=== secure_uart_crypto_top_tb ===
 tb/secure_uart_crypto_top_tb.vhd:266:9:@309447577499972fs:(report note): secure_uart_crypto_top_tb (BAUD=115200): 29 wire-level cases PASSED
 tb/secure_uart_crypto_top_tb.vhd:268:9:@309447577499972fs:(report note): secure_uart_crypto_top_tb: ALL TESTS PASSED
+simulation finished @309447577499972fs
+=== secure_uart_hardening_tb ===
+tb/secure_uart_hardening_tb.vhd:169:9:@7247061110650fs:(report note): A1 PASS: RX FIFO overflow flagged (44 dropped bytes)
+tb/secure_uart_hardening_tb.vhd:184:9:@17247061110650fs:(report note): A2 PASS: 39-byte response through 16-byte TX FIFO, junk ignored
+tb/secure_uart_hardening_tb.vhd:194:9:@29243588888300fs:(report note): A3 PASS: recovery after flood, nonce counter +1
+tb/secure_uart_hardening_tb.vhd:205:9:@36066505554850fs:(report note): B PASS: ENCRYPT_REQ refused (code 06), NV store untouched
+tb/secure_uart_hardening_tb.vhd:207:9:@36066505554850fs:(report note): secure_uart_hardening_tb: ALL TESTS PASSED
+simulation finished @36066505554850fs
 ALL TESTBENCHES PASSED
---- secure_uart_crypto_top_tb at 9600 baud
+== host tool self-test
+host_tool selftest: parsed and verified 29 device responses
+
+== secure_uart_crypto_top_tb at the specified 9600 baud (same source tree)
 tb/secure_uart_crypto_top_tb.vhd:266:9:@3677184679999967fs:(report note): secure_uart_crypto_top_tb (BAUD=9600): 29 wire-level cases PASSED
 tb/secure_uart_crypto_top_tb.vhd:268:9:@3677184679999967fs:(report note): secure_uart_crypto_top_tb: ALL TESTS PASSED
 simulation finished @3677184679999967fs

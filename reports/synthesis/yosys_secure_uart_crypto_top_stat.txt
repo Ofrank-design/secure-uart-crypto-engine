@@ -202,10 +202,10 @@
 
 === secure_uart_crypto_top ===
 
-   Number of wires:                133
-   Number of wire bits:           2896
-   Number of public wires:         133
-   Number of public wire bits:    2896
+   Number of wires:                136
+   Number of wire bits:           2899
+   Number of public wires:         136
+   Number of public wire bits:    2899
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -346,10 +346,10 @@
      uart_tx_50000000_9600           1
        uart_timing_50000000_9600_1      1
 
-   Number of wires:               5409
-   Number of wire bits:          96079
-   Number of public wires:        4426
-   Number of public wire bits:   95052
+   Number of wires:               5412
+   Number of wire bits:          96082
+   Number of public wires:        4429
+   Number of public wire bits:   95055
    Number of memories:              38
    Number of memory bits:        81920
    Number of processes:              0

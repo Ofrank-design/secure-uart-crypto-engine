@@ -1,4 +1,4 @@
-rtl/secure_uart_crypto_top.vhd:58:15:warning: unhandled attribute "async_reg" [-Wunhandled-attribute]
+rtl/secure_uart_crypto_top.vhd:59:15:warning: unhandled attribute "async_reg" [-Wunhandled-attribute]
     attribute async_reg of rst_s : signal is "true";
               ^
 rtl/uart_rx.vhd:31:15:warning: unhandled attribute "async_reg" [-Wunhandled-attribute]
@@ -7,111 +7,111 @@ rtl/uart_rx.vhd:31:15:warning: unhandled attribute "async_reg" [-Wunhandled-attr
 rtl/sync_fifo.vhd:33:12:note: found RAM "mem", width: 8 bits, depth: 512
     signal mem    : mem_t := (others => (others => '0'));
            ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4628", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4629", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4642", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4643", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4655", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4656", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4668", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4669", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4681", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4682", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4694", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4695", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4707", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4708", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4720", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4721", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4733", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4734", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4746", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4747", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4759", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4760", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4772", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4773", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4785", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4786", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4798", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4799", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4811", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4812", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n4824", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n4825", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5227", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5228", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5241", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5242", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5254", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5255", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5267", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5268", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5280", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5281", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5293", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5294", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5306", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5307", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5319", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5320", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5332", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5333", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5345", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5346", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5358", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5359", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5371", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5372", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5384", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5385", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5397", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5398", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5410", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5411", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n5423", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n5424", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n6155", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n6156", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n6167", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n6168", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n6180", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n6181", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
-rtl/aes_pkg.vhd:58:20:note: found ROM "n6193", width: 8 bits, depth: 256
+rtl/aes_pkg.vhd:58:20:note: found ROM "n6194", width: 8 bits, depth: 256
         return SBOX(to_integer(unsigned(b)));
                    ^
